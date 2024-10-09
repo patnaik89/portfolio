@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+  <div class="col-12 d-flex justify-content-center align-items-center ">
+    <div class="circular-image-container">
+      <img class="circular-image" src=" {% static 'images/im.jpeg' %}" alt="Image">
+    </div>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <h4 class="title"> Hi, my name is </h4>
+      <div class="name">
+        <h1> Dillip Patnaik </h1>
+        <h1> I am Pipeline Technical Director </h1>
+      </div>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <div class="col-12 d-flex justify-content-center align-items-center ">
+        <a href="https://www.linkedin.com/in/sdillippatnaik" target="_blank" class="ms-3">
+          <img src="{% static 'images/linkendin.png' %}" alt="linkedin" width="50" height="50" class="social_links">
+        </a>
+
+        <a href="https://github.com/patnaik89" target="_blank" class="ms-3">
+          <img src="{% static 'images/github.jpg' %}" alt="github" width="50" height="50" class="social_links">
+        </a>
+
+        <a href="https://www.instagram.com/patnaikdilip1?igsh=bTRxZmJkdXMwbTZt" target="_blank" class="ms-3">
+          <img src="{% static 'images/insta.jpg' %}" alt="instagram" width="50" height="50" class="social_links">
+        </a>
+      </div>
+  </div>
+</div>
+
+
+{% endblock content1 %}

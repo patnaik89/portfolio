@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-2">
+    <div class="col-4 text-center my-5 text-light">
+        <h1 class="mt-5"> Stay connected </h1>
+        <h3 class="mt-5"> patnaikdilip1@gmail.com</h3>
+            <div class=" d-flex justify-content-center align-items-center mt-5">
+                <a href="https://www.linkedin.com/in/sdillippatnaik" target="_blank" class="ms-3">
+                  <img src="{% static 'images/linkendin.png' %}" alt="linkedin" width="50" height="50" class="social_links">
+                </a>
+
+                <a href="https://github.com/patnaik89" target="_blank" class="ms-3">
+                  <img src="{% static 'images/github.jpg' %}" alt="youtube" width="50" height="50" class="social_links">
+                </a>
+
+                <a href="https://www.instagram.com/patnaikdilip1?igsh=bTRxZmJkdXMwbTZt" target="_blank" class="ms-3">
+                  <img src="{% static 'images/insta.jpg' %}" alt="instagram" width="50" height="50" class="social_links">
+                </a>
+            </div>
+
+
+
+
+    </div>
+
+    <div class="col-5 offset-1 mt-3 ">
+        <div class="container form-container">
+            <form>
+            <div class="form-group m-3">
+              <label for="exampleInputEmail1"> Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" >
+
+            </div>
+
+            <div class="form-group m-3">
+                <label for="email">Email </label>
+                <input type="email" class="form-control" id="email" >
+
+              </div>
+
+              <div class="form-group m-3">
+                <label for="phone">Phone no</label>
+                <input type="tel" class="form-control" id="phone" >
+
+              </div>
+
+              <div class="form-group m-3">
+                <label for="msg">Message</label>
+                <textarea type="tel" class="form-control" id="msg" rows="2" ></textarea>
+
+              </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock content1 %}
